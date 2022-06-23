@@ -11,3 +11,16 @@ export async function inserirHeroi(heroi) {
     heroi.id = reposta.insertId;
     return heroi;
 }
+
+export async function listarHerois () {
+        const comando=
+       
+    `select id_super_heroi id,
+    nm_super_heroi nome,
+    ds_super_poder superPoder,
+    bt_voa 		  voa
+from tb_super_heroi;`
+
+const [linhas] =await con.query(comando);
+        return linhas;
+}

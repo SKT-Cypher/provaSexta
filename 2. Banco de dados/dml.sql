@@ -9,3 +9,5 @@ select id_super_heroi id,
        ds_super_poder superPoder,
        bt_voa 		  voa
 from tb_super_heroi;
+
+-- consultar reserva
